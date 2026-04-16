@@ -240,7 +240,7 @@ pub struct RequestDTO {
     pub expiration_dt: TimestampRfc3339,
     pub execution_plan: RequestExecutionScheduleDTO,
     pub deduplication_key: Option<String>,
-    pub tags: Vec<String>,
+    pub tags: Option<Vec<String>>,
 }
 
 #[derive(CandidType, serde::Serialize, Deserialize, Debug, Clone)]
